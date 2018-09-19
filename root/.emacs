@@ -8,6 +8,9 @@
 (add-to-list 'package-archives '("melpa". "https://melpa.org/packages/") t)
 (package-initialize)
 
+(package-install 'zenburn-theme)
+(load-theme 'zenburn t)
+
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
