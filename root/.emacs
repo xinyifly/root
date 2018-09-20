@@ -20,6 +20,9 @@
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(package-install 'helm-projectile)
+(helm-projectile-on)
+(package-install 'helm-rg)
 
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
