@@ -15,6 +15,12 @@
 (projectile-mode 1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+(package-install 'helm)
+(setq helm-always-two-windows t)
+(helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
