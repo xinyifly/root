@@ -34,6 +34,9 @@
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(package-install 'org-pomodoro)
+(setq org-pomodoro-keep-killed-pomodoro-time t)
+
 (package-install 'pyvenv)
 (package-install 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-mode)
