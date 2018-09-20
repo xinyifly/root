@@ -41,5 +41,10 @@
 (package-install 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-mode)
 
+(package-install 'diminish)
+(diminish 'undo-tree-mode)
+(diminish 'projectile-mode)
+(diminish 'helm-mode)
+
 (setq custom-file "~/.emacs-custom.el")
 (load custom-file)
