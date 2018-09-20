@@ -4,6 +4,10 @@
 
 (set-face-font 'default "Monospace-10")
 
+(setq org-startup-indented t)
+(setq org-log-done 'time)
+(setq org-agenda-files '("~/Dropbox/Orgzly"))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa". "https://melpa.org/packages/") t)
 (package-initialize)
