@@ -8,6 +8,9 @@
 (add-to-list 'package-archives '("melpa". "https://melpa.org/packages/") t)
 (package-initialize)
 
+(package-install 'undo-tree)
+(global-undo-tree-mode 1)
+
 (package-install 'zenburn-theme)
 (load-theme 'zenburn t)
 
