@@ -30,5 +30,9 @@
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(package-install 'pyvenv)
+(package-install 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-mode)
+
 (setq custom-file "~/.emacs-custom.el")
 (load custom-file)
