@@ -5,6 +5,7 @@
 (set-face-font 'default "Monospace-10")
 
 (setq org-startup-indented t)
+(setq org-todo-keywords '((sequence "TODO(t)" "NEXT" "|" "DONE" "CANCELED")))
 (setq org-log-done 'time)
 (setq org-agenda-files '("~/Dropbox/Orgzly"))
 
