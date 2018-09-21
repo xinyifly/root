@@ -43,6 +43,8 @@
 (package-install 'pyvenv)
 (package-install 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-mode)
+(package-install 'yapfify)
+(add-hook 'python-mode-hook 'yapf-mode)
 
 (package-install 'diminish)
 (diminish 'undo-tree-mode)
