@@ -24,6 +24,7 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (package-install 'helm)
+(require 'helm-config)
 (setq helm-always-two-windows t)
 (setq helm-show-completion-display-function 'helm-show-completion-default-display-function)
 (helm-mode 1)
