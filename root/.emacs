@@ -41,6 +41,10 @@
 (package-install 'org-pomodoro)
 (setq org-pomodoro-keep-killed-pomodoro-time t)
 
+(package-install 'inf-ruby)
+(eval-after-load 'inf-ruby
+  '(define-key inf-ruby-minor-mode-map (kbd "C-c C-l") 'ruby-send-line))
+
 (package-install 'pyvenv)
 (package-install 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-mode)
