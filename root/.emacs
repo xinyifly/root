@@ -32,6 +32,11 @@
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "M-s o") 'helm-occur)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(bind-key* "C-c C-j" 'helm-semantic-or-imenu)
+(global-set-key (kbd "C-c C-M-j") 'helm-imenu-in-all-buffers)
 (add-hook 'eshell-mode-hook
 	  '(lambda () (define-key eshell-mode-map (kbd "C-c C-l") 'helm-eshell-history)))
 (package-install 'helm-projectile)
