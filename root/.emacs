@@ -4,6 +4,8 @@
 
 (set-face-font 'default "Monospace-10")
 
+(setq make-backup-files nil)
+
 (setq org-startup-indented t)
 (setq org-todo-keywords '((sequence "TODO(t)" "NEXT" "|" "DONE" "CANCELED")))
 (setq org-log-done 'time)
