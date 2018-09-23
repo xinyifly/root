@@ -6,6 +6,9 @@
 
 (setq make-backup-files nil)
 
+(eval-after-load 'term
+  '(term-set-escape-char ?\C-x))
+
 (setq org-startup-indented t)
 (setq org-todo-keywords '((sequence "TODO(t)" "NEXT" "|" "DONE" "CANCELED")))
 (setq org-log-done 'time)
