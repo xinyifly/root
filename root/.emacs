@@ -46,6 +46,15 @@
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(package-install 'multiple-cursors)
+(require 'mc-mark-more)
+(global-set-key (kbd "C->") 'mc/mark-next-word-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-word-like-this)
+(global-set-key (kbd "C-c C->") 'mc/mark-all-words-like-this)
+(global-set-key (kbd "C-M->") 'mc/mark-next-like-this-symbol)
+(global-set-key (kbd "C-M-<") 'mc/mark-previous-like-this-symbol)
+(global-set-key (kbd "C-c C-M->") 'mc/mark-all-symbols-like-this)
+
 (package-install 'org-pomodoro)
 (setq org-pomodoro-keep-killed-pomodoro-time t)
 
