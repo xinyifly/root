@@ -42,6 +42,7 @@
 (package-install 'helm-projectile)
 (helm-projectile-on)
 (package-install 'helm-rg)
+(package-install 'helm-dash)
 (package-install 'helm-systemd)
 (setq helm-systemd-list-not-loaded t)
 
