@@ -69,6 +69,11 @@
 (eval-after-load 'org
   '(define-key org-mode-map (kbd "C-c C-x <C-return>") 'org-pomodoro))
 
+(package-install 'yasnippet)
+(setq yas-triggers-in-field t)
+(yas-global-mode 1)
+(package-install 'yasnippet-snippets)
+
 (package-install 'inf-ruby)
 (eval-after-load 'inf-ruby
   '(define-key inf-ruby-minor-mode-map (kbd "C-c C-l") 'ruby-send-line))
@@ -83,6 +88,7 @@
 (diminish 'undo-tree-mode)
 (diminish 'projectile-mode)
 (diminish 'helm-mode)
+(diminish 'yas-minor-mode)
 
 (setq custom-file "~/.emacs-custom.el")
 (load custom-file)
