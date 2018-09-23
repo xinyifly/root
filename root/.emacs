@@ -13,6 +13,7 @@
 (setq org-todo-keywords '((sequence "TODO(t)" "NEXT" "|" "DONE" "CANCELED")))
 (setq org-log-done 'time)
 (setq org-agenda-files '("~/Dropbox/Orgzly"))
+(global-set-key (kbd "C-c a") 'org-agenda)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa". "https://melpa.org/packages/") t)
