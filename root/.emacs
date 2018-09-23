@@ -42,6 +42,8 @@
 (package-install 'helm-projectile)
 (helm-projectile-on)
 (package-install 'helm-rg)
+(package-install 'helm-systemd)
+(setq helm-systemd-list-not-loaded t)
 
 (package-install 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
