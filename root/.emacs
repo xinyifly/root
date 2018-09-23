@@ -60,6 +60,8 @@
 
 (package-install 'org-pomodoro)
 (setq org-pomodoro-keep-killed-pomodoro-time t)
+(eval-after-load 'org
+  '(define-key org-mode-map (kbd "C-c C-x <C-return>") 'org-pomodoro))
 
 (package-install 'inf-ruby)
 (eval-after-load 'inf-ruby
