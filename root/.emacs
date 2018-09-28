@@ -27,6 +27,10 @@
 (package-install 'zenburn-theme)
 (load-theme 'zenburn t)
 
+(package-install 'avy)
+(global-set-key (kbd "C-;") 'avy-goto-char-timer)
+(global-set-key (kbd "M-g g") 'avy-goto-line)
+
 (package-install 'projectile)
 (projectile-mode 1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
