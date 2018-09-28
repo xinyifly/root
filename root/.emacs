@@ -88,6 +88,9 @@
 (package-install 'yapfify)
 (add-hook 'python-mode-hook 'yapf-mode)
 
+(package-install 'restclient)
+(add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
+
 (package-install 'diminish)
 (diminish 'undo-tree-mode)
 (diminish 'projectile-mode)
