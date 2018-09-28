@@ -57,6 +57,7 @@
 (setq helm-systemd-list-not-loaded t)
 
 (package-install 'magit)
+(setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (package-install 'multiple-cursors)
