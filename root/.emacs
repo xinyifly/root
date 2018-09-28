@@ -78,6 +78,9 @@
 (yas-global-mode 1)
 (package-install 'yasnippet-snippets)
 
+(package-install 'editorconfig)
+(editorconfig-mode 1)
+
 (package-install 'inf-ruby)
 (eval-after-load 'inf-ruby
   '(define-key inf-ruby-minor-mode-map (kbd "C-c C-l") 'ruby-send-line))
@@ -96,6 +99,7 @@
 (diminish 'projectile-mode)
 (diminish 'helm-mode)
 (diminish 'yas-minor-mode)
+(diminish 'editorconfig-mode)
 
 (setq custom-file "~/.emacs-custom.el")
 (load custom-file)
