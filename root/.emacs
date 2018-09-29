@@ -92,6 +92,8 @@
 (package-install 'yapfify)
 (add-hook 'python-mode-hook 'yapf-mode)
 
+(package-install 'dockerfile-mode)
+
 (package-install 'restclient)
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
