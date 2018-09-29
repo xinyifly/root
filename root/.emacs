@@ -3,6 +3,7 @@
 (scroll-bar-mode -1)
 
 (set-face-font 'default "Monospace-10")
+(setq split-width-threshold 120)
 
 (setq make-backup-files nil)
 
