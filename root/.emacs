@@ -93,6 +93,8 @@
 (package-install 'yapfify)
 (add-hook 'python-mode-hook 'yapf-mode)
 
+(package-install 'yaml-mode)
+
 (package-install 'dockerfile-mode)
 
 (package-install 'restclient)
