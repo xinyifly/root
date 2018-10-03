@@ -87,6 +87,10 @@
 (eval-after-load 'inf-ruby
   '(define-key inf-ruby-minor-mode-map (kbd "C-c C-l") 'ruby-send-line))
 
+(package-install 'prettier-js)
+(setq prettier-js-command "prettier-standard")
+(add-hook 'js-mode-hook 'prettier-js-mode)
+
 (package-install 'pyvenv)
 (package-install 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-mode)
