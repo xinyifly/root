@@ -70,6 +70,9 @@
 (global-set-key (kbd "C-M-<") 'mc/mark-previous-like-this-symbol)
 (global-set-key (kbd "C-c C-M->") 'mc/mark-all-symbols-like-this)
 
+(package-install 'pass)
+(package-install 'helm-pass)
+
 (package-install 'org-pomodoro)
 (setq org-pomodoro-keep-killed-pomodoro-time t)
 (eval-after-load 'org
