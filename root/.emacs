@@ -2,7 +2,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-(set-face-font 'default "Monospace-10")
+(set-face-font 'default "WenQuanYi Zen Hei Mono-12")
 (setq split-width-threshold 120)
 
 (setq make-backup-files nil)
