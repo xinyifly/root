@@ -32,6 +32,10 @@
 (global-set-key (kbd "C-;") 'avy-goto-char-timer)
 (global-set-key (kbd "M-g g") 'avy-goto-line)
 
+(package-install 'smartparens)
+(require 'smartparens-config)
+(smartparens-global-mode 1)
+
 (package-install 'projectile)
 (projectile-mode 1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
@@ -112,6 +116,7 @@
 
 (package-install 'diminish)
 (diminish 'undo-tree-mode)
+(diminish 'smartparens-mode)
 (diminish 'projectile-mode)
 (diminish 'helm-mode)
 (diminish 'yas-minor-mode)
