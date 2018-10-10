@@ -104,6 +104,9 @@
 
 (package-install 'dockerfile-mode)
 
+(package-install 'terraform-mode)
+(add-hook 'terraform-mode-hook #'terraform-format-on-save-mode)
+
 (package-install 'restclient)
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
