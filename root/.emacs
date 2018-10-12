@@ -85,7 +85,6 @@
 (package-install 'yasnippet)
 (setq yas-triggers-in-field t)
 (yas-global-mode 1)
-(package-install 'yasnippet-snippets)
 
 (package-install 'editorconfig)
 (editorconfig-mode 1)
