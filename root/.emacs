@@ -63,6 +63,7 @@
 
 (package-install 'magit)
 (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
+(setq magit-diff-refine-hunk t)
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (package-install 'multiple-cursors)
