@@ -25,8 +25,8 @@
 (package-install 'undo-tree)
 (global-undo-tree-mode 1)
 
-(package-install 'zenburn-theme)
-(load-theme 'zenburn t)
+(package-install 'color-theme-sanityinc-tomorrow)
+(load-theme 'sanityinc-tomorrow-bright t)
 
 (package-install 'avy)
 (global-set-key (kbd "C-;") 'avy-goto-char-timer)
